@@ -3,9 +3,8 @@ package org.gaming;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
-public class SnakeGame extends JFrame {
-
-    public  SnakeGame () {
+public class Main extends JFrame {
+    public Main() {
 
         initScreen();
     }
@@ -24,7 +23,7 @@ public class SnakeGame extends JFrame {
     public static void main(String[] args) {
 
         EventQueue.invokeLater(() -> {
-            JFrame frame = new SnakeGame();
+            JFrame frame = new Main();
             frame.setVisible(true);
         });
     }

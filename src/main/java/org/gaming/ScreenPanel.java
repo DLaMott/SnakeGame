@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.net.URL;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -55,13 +56,26 @@ public class ScreenPanel extends JPanel implements ActionListener {
 
     private void loadIcons() {
 
-        ImageIcon iisnakepart = new ImageIcon("src/dot.png");
+        /*URL url = getClass().getResource("src/main/resources/apple.png");
+        ImageIcon iisnakepart = new ImageIcon(url);
         snakepart = iisnakepart.getImage();
 
-        ImageIcon iiapple = new ImageIcon("src/apple.png");
+        URL url1 = getClass().getResource("src/main/resources/dot.png");
+        ImageIcon iiapple = new ImageIcon(url1);
         apple = iiapple.getImage();
 
-        ImageIcon iisnakehead = new ImageIcon("src/head.png");
+        URL url2 = getClass().getResource("src/main/resources/head.png");
+        ImageIcon iisnakehead = new ImageIcon(url2);
+        snakehead = iisnakehead.getImage();
+        */
+
+        ImageIcon iisnakepart = new ImageIcon("src/main/resources/dot.png");
+        snakepart = iisnakepart.getImage();
+
+        ImageIcon iiapple = new ImageIcon("src/main/resources/apple.png");
+        apple = iiapple.getImage();
+
+        ImageIcon iisnakehead = new ImageIcon("src/main/resources/head.png");
         snakehead = iisnakehead.getImage();
     }
 
