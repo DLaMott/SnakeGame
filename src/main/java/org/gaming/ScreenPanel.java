@@ -56,27 +56,18 @@ public class ScreenPanel extends JPanel implements ActionListener {
 
     private void loadIcons() {
 
-        /*URL url = getClass().getResource("src/main/resources/apple.png");
-        ImageIcon iisnakepart = new ImageIcon(url);
-        snakepart = iisnakepart.getImage();
+        URL url = getClass().getResource("apple.png");
+        Image iisnakepart = new ImageIcon(url).getImage();
+        snakepart = iisnakepart;
 
-        URL url1 = getClass().getResource("src/main/resources/dot.png");
-        ImageIcon iiapple = new ImageIcon(url1);
-        apple = iiapple.getImage();
+        URL url1 = getClass().getResource("dot.png");
+        Image iiapple = new ImageIcon(url1).getImage();
+        apple = iiapple;
 
-        URL url2 = getClass().getResource("src/main/resources/head.png");
-        ImageIcon iisnakehead = new ImageIcon(url2);
-        snakehead = iisnakehead.getImage();
-        */
+        URL url2 = getClass().getResource("head.png");
+        Image iisnakehead = new ImageIcon(url2).getImage();
+        snakehead = iisnakehead;
 
-        ImageIcon iisnakepart = new ImageIcon("src/main/resources/dot.png");
-        snakepart = iisnakepart.getImage();
-
-        ImageIcon iiapple = new ImageIcon("src/main/resources/apple.png");
-        apple = iiapple.getImage();
-
-        ImageIcon iisnakehead = new ImageIcon("src/main/resources/head.png");
-        snakehead = iisnakehead.getImage();
     }
 
     private void initSnakeGame() {
